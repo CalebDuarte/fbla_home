@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<!-- admin-theme class activates admin colors -->
+<body class="aside-layout admin-theme">
+
+  <aside class="side-nav">
+    <h1 class="site-title">Admin Panel</h1>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#">Review Items</a>
+      <a href="#">Approve Posts</a>
+      <a href="#">Manage Users</a>
+      <a href="#" id="logoutBtn">Logout</a>
+    </nav>
+  </aside>
+
+  <!-- dash content -->
+  <main class="content">
+    <h1>Welcome, Admin</h1>
+    <p>
+      This dashboard allows administrators to review, approve,
+      and manage lost and found submissions.
+    </p>
+
+    <!-- Example admin cards -->
+    <div class="admin-cards">
+      <div class="admin-card">Pending Items</div>
+      <div class="admin-card">Approved Items</div>
+      <div class="admin-card">Reported Issues</div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
