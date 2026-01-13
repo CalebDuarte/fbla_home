@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Color palette */
+:root {
+  --bg-color: #DCD6C7;
+  --secondary-color: #740B12;
+  --accent-color: #D7C051;
+  --text-color: #000;
+}
+
+/*main body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* side nav*/
+.aside-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.side-nav {
+  width: 220px;
+  background-color: var(--secondary-color);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.site-title {
+  color: var(--accent-color);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  line-height: 1;
+}
+
+.site-title img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* nav links */
+.side-nav nav a {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+  display: block;
+  transition: all 0.2s ease;
+}
+
+.side-nav nav a:hover {
+  color: var(--accent-color);
+  transform: translateX(5px);
+}
+
+.side-nav nav a:active {
+  text-shadow: 0px 3px 2px rgb(0, 0, 0);
+  transform: translateX(5px);
+}
+
+/* Admin-only links */
+.admin-only {
+  display: none;
+}
+
+/* main content*/
+.content {
+  flex: 1;
+  padding: 2rem;
+}
+
+/* Hero section */
+.hero {
+  min-height: 60vh;
+  background-image: url("images/hero-image.avif");
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  padding: 3rem;
+  color: white;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  text-shadow: 0 3px 8px rgba(0,0,0,0.8);
+}
+
+.hero-text p {
+  font-size: 1.5rem;
+  text-shadow: 0 3px 8px rgba(0,0,0,0.8);
+}
+
+/* Info section */
+.info {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .aside-layout {
+    flex-direction: column;
+  }
+
+  .side-nav {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .side-nav nav {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .items-header { 
+        text-align: center; 
+        margin-bottom: 2rem; 
+    }
+    .items-header h1 { 
+        color: var(--secondary-color); 
+    }
+    .items-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      padding: 1rem;
+    }
+    .item-card {
+      background-color: #ededed;
+      border: 2px solid var(--secondary-color);
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+    }
+    .item-card h3 { 
+        color: var(--secondary-color); 
+        margin-bottom: 0.5rem; }
+    .item-card p { 
+        margin-bottom: 0.4rem; 
+    }
+    .category { 
+        font-weight: bold; 
+        color: var(--accent-color); 
+    }
+    .no-items { 
+        text-align: center; 
+        font-size: 1.2rem; 
+        margin-top: 2rem; 
+    }
+  </style>
+  <script src="items.js" defer></script>
+</head>
+<body>
+  <header class="items-header">
+    <h1>Reported Lost Items</h1>
+    <p>View any items that have been reported missing</p>
+  </header>
+  <main class="items-container" id="itemsContainer"></main>
+</body>
+</html>
