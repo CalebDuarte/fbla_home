@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Login</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="login-page">
+
+  <!-- login box -->
+  <div class="login-box">
+    <h1>Admin Login</h1>
+
+    <!-- Username input -->
+    <input id="username" type="text" placeholder="Username" />
+
+    <!-- Password input -->
+    <input id="password" type="password" placeholder="Password" />
+
+    <!-- Login button -->
+    <button onclick="adminLogin()">Log In</button>
+
+    <button class="goBackBtn" onclick="goBack()">Go Back</button>
+
+    <!-- Messages -->
+    <p id="success-msg"></p>
+    <p id="error-msg"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
